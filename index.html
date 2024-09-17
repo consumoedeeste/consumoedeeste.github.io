@@ -11,13 +11,13 @@
         <h1>Calculadora de Factura Eléctrica</h1>
         
         <label for="referencia">Ingrese el kWh del mes anterior:</label>
-        <input type="number" id="referencia" placeholder="kWh de referencia">
+        <input type="text" id="referencia" placeholder="kWh de referencia" oninput="validarNumero(this)">
 
         <label for="actuales">Ingrese el kWh actuales:</label>
-        <input type="number" id="actuales" placeholder="kWh actuales">
+        <input type="text" id="actuales" placeholder="kWh actuales" oninput="validarNumero(this)">
         
         <label for="consumo">Consumo calculado en kWh:</label>
-        <input type="number" id="consumo" placeholder="Consumo en kWh" readonly>
+        <input type="text" id="consumo" placeholder="Consumo en kWh" readonly>
 
         <button onclick="calcularDiferencia()">Calcular</button>
         
