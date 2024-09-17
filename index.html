@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Factura Eléctrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Factura Eléctrica</h1>
+        
+        <label for="referencia">Ingrese el kWh del mes anterior:</label>
+        <input type="number" id="referencia" placeholder="kWh de referencia">
+
+        <label for="actuales">Ingrese el kWh actuales:</label>
+        <input type="number" id="actuales" placeholder="kWh actuales">
+        
+        <label for="consumo">Consumo calculado en kWh:</label>
+        <input type="number" id="consumo" placeholder="Consumo en kWh" readonly>
+
+        <button onclick="calcularDiferencia()">Calcular</button>
+        
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
