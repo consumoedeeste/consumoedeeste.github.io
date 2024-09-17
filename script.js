@@ -1,3 +1,7 @@
+function validarNumero(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+}
+
 function calcularDiferencia() {
     let referencia = parseFloat(document.getElementById('referencia').value);
     let actuales = parseFloat(document.getElementById('actuales').value);
