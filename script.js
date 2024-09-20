@@ -7,7 +7,7 @@ function calcularDiferencia() {
     let actuales = parseFloat(document.getElementById('actuales').value);
     
     if (isNaN(referencia) || isNaN(actuales) || referencia < 0 || actuales < 0 || actuales < referencia) {
-        alert("Por favor, ingrese valores válidos.");
+        alert("Por favor, el valor actual debe ser mayor al anterior.");
         return;
     }
     
